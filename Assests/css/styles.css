@@ -1,0 +1,44 @@
+thead {
+    /*background-color: #199e62;*/
+    border: none !important;
+    color: #199e62;
+}
+
+h2 {
+    padding-top: 30px;
+    color: #199e62;
+    text-align: center;
+}
+
+.topSearch {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: .25rem !important;
+}
+
+.fa-trash {
+    color: red;
+}
+
+.fa-trash:hover {
+    color: rgb(199, 2, 2);
+}
+
+
+
+.table td, .table th {
+   vertical-align: 0 !important;
+}
+
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+
+.table thead th {
+    border-bottom: none;
+}
+

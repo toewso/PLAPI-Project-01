@@ -4,15 +4,17 @@ require_once("../conn.php");
 
 // if $_POST["search"] isset and is not blank or else false
 $search = isset( $_POST["search"]) && $_POST["search"] != "" ? $_POST["search"] : false;
+$search_model = isset( $_POST["search_model"]) && $_POST["search_model"] != "" ? $_POST["search_model"] : false;
 $year = isset( $_POST["year"]) ? $_POST["year"] : false;
 
 $search = $db->real_escape_string(trim($search)); // Prevents mysql injection attackes. Checks if the string that w are getting from post has no kind of characters that could intentially cause an sql injection into server
-$search_model = $db->real_escape_string(trim($search)); // Prevents mysql injection attackes. Checks if the string that w are getting from post has no kind of characters that could intentially cause an sql injection into server
+$search_model = $db->real_escape_string(trim($search_model)); // Prevents mysql injection attackes. Checks if the string that w are getting from post has no kind of characters that could intentially cause an sql injection into server
 $year = $db->real_escape_string($year);
 
-if($search || $year) {
+if($search || $year || $search_model) {
     $search_sql = "SELECT * FROM cars
-                   WHERE nickname LIKE '%$search%' "; 
+                   WHERE nickname LIKE '%$search%'
+                   AND CONCAT_WS('', make, model) LIKE '%$search_model%' "; 
 
     if($year != 0) {
         $search_sql .= " AND year = $year";
@@ -22,17 +24,7 @@ if($search || $year) {
     $search_sql = "SELECT * FROM cars";
 }
 
-if($search || $year) {
-    $search_sql = "SELECT * FROM cars
-                   WHERE model LIKE '%$search_model%' "; 
 
-    if($year != 0) {
-        $search_sql .= " AND year = $year";
-    }
-
-} else {
-    $search_sql = "SELECT * FROM cars";
-}
 
 
 

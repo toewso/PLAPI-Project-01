@@ -23,10 +23,10 @@ function __($input){
 <body>
 
 <div class="container">
-    <h3>Cars</h3>
+    <h2>Project 1 Cars</h2>
 
     <div class="row">
-        <div class="col-12 py-3">
+        <div class="col-12 py-5">
             <form class="input-group" id="search-form">
                 <div class="input-group-prepend"> 
                     <select class="custom-select" id="year-select">
@@ -43,9 +43,9 @@ function __($input){
                         ?>
                     </select>
                 </div>
-                <input type="search" name="search" placeholder="Search" id="search-model">
-                <input type="search" name="search" placeholder="Enter Nickname" id="search-nickname">
-                <button class="btn btn-primary" type="submit">
+                <input class="form-control topSearch" type="search" name="search" placeholder="Search" id="search-model">
+                <input class="form-control topSearch" type="search" name="search" placeholder="Enter Nickname" id="search-nickname">
+                <button class="btn btn-primary topSearchButton" type="submit">
                     <i class="fas fa-search text-white"></i>
                 </button>
             </form>
@@ -58,27 +58,36 @@ function __($input){
             <th>Model</th>
             <th>Year</th>
             <th>Nickname</th>
+            <th></th>
         </thead>
         <tbody id="search-results">
-            <?php
-            // run function from the myqli object $db
-            // query creates a new object, returns mysqli_results objects -  $results is now object
-            $sql = "SELECT * FROM cars";
-            $results = $db->query($sql);
-
-            while($row = $results->fetch_assoc()) {
-                echo "<tr>";
-                echo "<td>" . __($row["make"]) . "</td>";
-                echo "<td>" . __($row["model"]) . "</td>";
-                echo "<td>" . __($row["year"]) . "</td>";
-                echo "<td>" . __($row["nickname"]) . "</td>";
-                echo "</tr>";
-            }
-            ?>
+           
         </tbody>
-
+            <foot>
+                <th><input type="text" class="form-control" placeholder="Make" id="carMake"></th>
+                <th><input type="text" class="form-control" placeholder="Model" id="carModel"></th>
+                <th><input type="text" class="form-control" placeholder="Year" id="carYear"></th>
+                <th><input type="text" class="form-control" placeholder="Nickname" id="carNickname"></th>
+                <th><button class="btn btn-primary" data-action="add"><i class="fas fa-plus"></i><button</th>
+            </foot>
     </table>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="deleteCarAlert" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+       Are you sure you want to delete this car?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-danger" data-action="confirm-delete">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
      
 

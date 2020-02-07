@@ -67,11 +67,11 @@ hr {
   cursor: pointer;
 }
 
-.dropdown {
+.dropdown .col-md {
   float: right;
 }
 
-.dropdown .nav-link:hover {
+.dropdown .col-md .nav-link:hover {
   color: #008DAC !important;
   font-weight: 500;
   letter-spacing: .5px;
@@ -821,5 +821,33 @@ input:-internal-autofill-selected {
 
 .editProfile .uploadPic {
   height: 50% !important;
+}
+
+/***********************************************************************************************
+
+                                         FOOTER
+
+***********************************************************************************************/
+.footer {
+  background-color: #008DAC;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+
+.footer .footerlist {
+  text-decoration: none;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer .footeritem {
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -63,6 +63,7 @@ hr {
    color: gray !important;
    font-weight: 500 !important;
    letter-spacing: .5px;
+  
 
   
 
@@ -87,11 +88,17 @@ hr {
 
 .dropdown .nav-link .dropdown-toggle {
    cursor: pointer;
+   
+   
 }
 
 
-.dropdown {
+
+
+.dropdown .col-md {
   float: right;
+ 
+
 
   .nav-link:hover {
    color: #008DAC !important;
@@ -988,3 +995,43 @@ hr {
    }
 
   } 
+
+
+
+
+  /***********************************************************************************************
+
+                                         FOOTER
+
+***********************************************************************************************/
+
+
+.footer {
+   background-color: #008DAC;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   color: white;
+   text-align: center;
+
+   .footerlist {
+      text-decoration: none;
+      text-align: center;
+   
+         margin-top: 1rem;
+         margin-bottom: 1rem;
+     
+
+     
+
+   }
+
+   .footeritem {
+      text-decoration: none;
+      list-style: none;
+      display: inline;
+      padding-left: 30px;
+      padding-right: 30px;
+
+   }
+
+}

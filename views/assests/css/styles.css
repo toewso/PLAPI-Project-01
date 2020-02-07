@@ -1,0 +1,825 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+hr {
+  clear: both;
+}
+
+/***********************************************************************************************
+
+                                          NAV BAR
+
+***********************************************************************************************/
+.navbar-light .navbar-nav .nav-link {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: gray !important;
+  font-weight: 500;
+  letter-spacing: .5px;
+}
+
+.navbar-brand {
+  margin-right: 3rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.links a {
+  color: gray !important;
+  font-weight: 500;
+  letter-spacing: .5px;
+}
+
+.links a:hover {
+  color: #008DAC !important;
+  font-weight: 500;
+  letter-spacing: .5px;
+  text-decoration: none;
+}
+
+#search_form {
+  color: gray !important;
+  font-weight: 500 !important;
+  letter-spacing: .5px;
+}
+
+#search_form :hover::-webkit-input-placeholder {
+  color: #008DAC;
+}
+
+#search_form .form-control {
+  background-color: transparent !important;
+  border: none;
+  border-radius: 0;
+  padding-left: 0;
+  color: black !important;
+}
+
+.dropdown .nav-link .dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown {
+  float: right;
+}
+
+.dropdown .nav-link:hover {
+  color: #008DAC !important;
+  font-weight: 500;
+  letter-spacing: .5px;
+  text-decoration: none;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-menu {
+  display: none;
+  left: auto;
+  right: auto;
+  position: absolute;
+  background-color: #f8f9fa;
+  min-width: 160px;
+  z-index: 1;
+  cursor: pointer;
+  border: none;
+}
+
+/* Links inside the dropdown */
+.dropdown-menu a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-menu a:hover {
+  color: #008DAC !important;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  font-weight: 500;
+  letter-spacing: .5px;
+  color: #707070 !important;
+}
+
+.dropdown-item :active {
+  background-color: transparent;
+}
+
+@media all and (max-width: 830px) {
+  .navbar-collapse {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 0;
+  }
+  .nav-link {
+    padding: 0 1rem;
+  }
+  .links {
+    padding-top: 10px;
+  }
+  .navbar-brand {
+    padding-left: 0;
+  }
+  .dropdown-menu a {
+    padding: 2px 16px;
+  }
+}
+
+/***********************************************************************************************
+
+                                          SIGN UP FORM
+
+***********************************************************************************************/
+.logowhite {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.accordian .card-header {
+  cursor: pointer;
+}
+
+.signUp #cjText {
+  padding-top: 250px;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 70px;
+}
+
+.signUp h1 {
+  color: white;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.signUp .cjDesc {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 37px;
+}
+
+.logIn #cjText {
+  padding-top: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 70px;
+}
+
+.logIn h1 {
+  color: white;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.logIn .cjDesc {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 37px;
+}
+
+.background {
+  background: url(../images/bg1.png);
+  width: 600px;
+  height: 800px;
+  background-size: cover;
+  /* or contain depending on what you want */
+  background-repeat: no-repeat;
+  margin: auto;
+  padding: 0;
+}
+
+.backgroundLogin {
+  background: url(../images/bg1.png);
+  width: 600px;
+  height: 650px;
+  background-size: cover;
+  /* or contain depending on what you want */
+  background-repeat: no-repeat;
+  margin: auto;
+  padding: 0;
+}
+
+.signUpForm {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 40px;
+}
+
+.signUpForm h4 {
+  color: #393939;
+  text-align: center;
+}
+
+.signUpForm h5 {
+  color: #393939;
+  text-align: center;
+}
+
+.loginForm {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 200px;
+}
+
+.loginForm h4 {
+  color: #393939;
+  text-align: center;
+}
+
+.loginForm h5 {
+  color: #393939;
+  text-align: center;
+}
+
+.loginForm #rememberMe {
+  font-size: 14px;
+  color: #898989;
+}
+
+#signupCard p {
+  color: #393939;
+  text-align: center;
+}
+
+#signupCard a {
+  color: #008DAC;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#signupCard a:hover {
+  text-decoration: none;
+  color: #006880;
+}
+
+#signupCardBody input {
+  background-color: transparent !important;
+}
+
+#signupCardBody ::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #898989 !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+#signupCardBody :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #898989 !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+#signupCardBody ::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #898989 !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+#signupCardBody ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #898989 !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+input:-internal-autofill-selected {
+  background-color: transparent !important;
+  background-image: none !important;
+  color: white !important;
+}
+
+.formone .form-control {
+  background-color: transparent !important;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #898989;
+  padding-left: 0;
+  color: black !important;
+  padding-bottom: 10px;
+}
+
+.formone .form-control .form-control:focus {
+  color: #495057;
+  background-color: transparent !important;
+  border-color: none !important;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.textArea {
+  background-color: transparent !important;
+  border-radius: 2px;
+  border: 1px solid #898989 !important;
+  padding: 0;
+  color: black !important;
+}
+
+.form-select {
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.form-select:focus {
+  border-color: none !important;
+}
+
+#bioLabel {
+  color: #898989;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #008DAC;
+  color: white;
+  height: 45px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.block:hover {
+  background-color: #006880;
+  color: white;
+}
+
+.smallText {
+  font-size: 12px;
+  color: #CBCBCB;
+  text-align: center;
+  line-height: 14px;
+}
+
+.incorrectPassword {
+  text-align: center;
+  color: #008DAC !important;
+}
+
+.noAccount {
+  color: #707070;
+  font-size: 18px;
+  text-align: center;
+}
+
+.noAccount a {
+  text-decoration: none;
+  color: #008DAC;
+  font-weight: 500;
+}
+
+.noAccount a:hover {
+  color: #006880;
+}
+
+@media all and (max-width: 830px) {
+  .signUp #cjText {
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+  }
+  .signUp h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .signUp .cjDesc {
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .signUpForm {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 50px;
+  }
+  .signUpForm h4 {
+    color: #393939;
+    text-align: center;
+  }
+  .signUpForm h5 {
+    color: #393939;
+    text-align: center;
+  }
+  .loginForm {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .logIn #cjText {
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+  }
+  .logIn h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .logIn .cjDesc {
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .background {
+    background: url(../images/bg1.png);
+    width: 600px;
+    height: 570px;
+    background-size: cover;
+    /* or contain depending on what you want */
+    background-repeat: no-repeat;
+    margin: auto;
+    padding: 0;
+  }
+  .backgroundLogin {
+    background: url(../images/bg1.png);
+    width: 600px;
+    height: 570px;
+    background-size: cover;
+    /* or contain depending on what you want */
+    background-repeat: no-repeat;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+/***********************************************************************************************
+
+                                        INDEX
+
+***********************************************************************************************/
+.projectCont {
+  padding: 50px;
+}
+
+.project-meta {
+  padding-bottom: 1em;
+}
+
+.project-meta:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.project {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card-body {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0rem;
+  padding-left: 1rem;
+}
+
+.card-footer {
+  border: none;
+  background-color: #f8f9fa;
+}
+
+.profilePic {
+  height: 27px;
+  width: 27px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  float: left;
+  margin-right: 15px;
+}
+
+#title {
+  text-transform: uppercase;
+  color: #008DAC;
+  font-size: 18px;
+  line-height: 1;
+  margin-top: .5rem;
+  margin-bottom: 0;
+}
+
+.pDesc {
+  font-weight: 300;
+  color: #898989;
+}
+
+.comment-loop {
+  max-height: 300px;
+  overflow-y: scroll;
+  padding: 1rem;
+  display: none;
+}
+
+.comment-loop .comment-username {
+  display: block;
+  opacity: 0.75;
+  font-size: 70%;
+}
+
+.comment-loop .my_comment {
+  color: blue;
+}
+
+.comment-btn:hover {
+  color: #008DAC;
+}
+
+.fa-heart {
+  color: #008DAC;
+}
+
+.fa-edit {
+  color: #CBCBCB;
+}
+
+.fa-edit:hover {
+  color: #64B4C6;
+}
+
+.fa-trash {
+  color: #CBCBCB;
+}
+
+.fa-trash:hover {
+  color: #C71F4C;
+}
+
+.comment-loop .comment-username {
+  color: #008DAC;
+}
+
+.comment-loop .my_comment {
+  color: #008DAC;
+}
+
+.project-body {
+  position: relative;
+}
+
+.project {
+  opacity: 1;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.middle {
+  opacity: 0;
+  bottom: 0;
+  background-color: #008DAC;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  position: absolute;
+  padding: 10px;
+}
+
+.userName a {
+  color: white;
+  text-decoration: none;
+}
+
+.userName a:hover {
+  color: #006880;
+}
+
+.card-img:hover .project {
+  opacity: 0.7;
+}
+
+.card-img:hover .middle {
+  opacity: 1;
+}
+
+.hvrbox .hvrbox-layer_slideup {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.hvrbox:hover .hvrbox-layer_slideup,
+.hvrbox.active .hvrbox-layer_slideup {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/***********************************************************************************************
+
+                                        INDEX USER
+
+***********************************************************************************************/
+.profileCont {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.profileCont .nav-pills .nav-link.active, .profileCont .nav-pills .show > .nav-link {
+  color: #008DAC;
+  background-color: transparent;
+}
+
+.profileCont .nav-item a {
+  color: #393939;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.profileCont .nav-item a:hover {
+  color: #008DAC;
+}
+
+.profileRow {
+  padding-top: 100px;
+}
+
+.profileCol {
+  padding-right: 100px;
+}
+
+.infoRight {
+  float: right;
+}
+
+.infoLeft {
+  float: left;
+}
+
+.profileIcons {
+  color: #008DAC;
+  font-size: 20px;
+  letter-spacing: 6px;
+}
+
+.profileIcons i:hover {
+  color: #006880;
+}
+
+.profileName {
+  float: left;
+}
+
+.shapePic {
+  height: 200px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.block2 {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #008DAC;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.block2:hover {
+  background-color: #006880;
+  color: white;
+}
+
+@media all and (max-width: 830px) {
+  .profileCont {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .profileCont .proName {
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+  }
+  .profileCol {
+    padding-right: 15px;
+  }
+  .profileRow {
+    padding-top: 10px;
+  }
+  .infoRight {
+    float: none;
+  }
+  .infoLeft {
+    float: none;
+  }
+  .shapePic {
+    height: 300px;
+    width: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .profileIcons {
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+  }
+}
+
+/***********************************************************************************************
+
+                                        EDIT PROJECT
+
+***********************************************************************************************/
+.editProject .editCard {
+  margin: 0 auto;
+  /* Added */
+  float: none;
+  /* Added */
+  margin-bottom: 10px;
+  /* Added */
+}
+
+.editProject h4 {
+  color: #393939;
+}
+
+/***********************************************************************************************
+
+                                        ADD PROJECT
+
+***********************************************************************************************/
+.addProject h4 {
+  color: #393939;
+}
+
+.addProject .card {
+  margin: 0 auto;
+  /* Added */
+  float: none;
+  /* Added */
+  margin-bottom: 10px;
+  /* Added */
+}
+
+@media all and (max-width: 830px) {
+  .w-50 {
+    width: 100% !important;
+  }
+  .card-body {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/***********************************************************************************************
+
+                                         EDIT PROFILE
+
+***********************************************************************************************/
+.editProfile .card {
+  margin: 0 auto;
+  /* Added */
+  float: none;
+  /* Added */
+  margin-bottom: 10px;
+  /* Added */
+}
+
+.editProfile h4 {
+  color: #393939;
+}
+
+.editProfile .uploadPic {
+  height: 50% !important;
+}
+/*# sourceMappingURL=styles.css.map */
